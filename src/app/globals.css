@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #312f2f;
+  --font-color: #ffffff;
+}
+
+html {
+  @apply no-scrollbar
+}
+
+body {
+  background: var(--background);
+  color: var(--font-color);
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
+@theme {
+  --color-primary: #66F542;
+  --color-accent: #EA4040;
+  --color-post: #535564;
+  --color-menuHover: #0000003d;
+  --color-border: #d1d5dc;
+  --color-font: #312f2f;
+  --breakpoint-xs: 31.25rem;
+  --breakpoint-sm: 37.5rem;
+  --breakpoint-md: 43.125rem;
+  --breakpoint-lg: 61.75rem;
+  --breakpoint-xl: 67.375rem;
+  --breakpoint-xxl: 79.063rem;
+}
